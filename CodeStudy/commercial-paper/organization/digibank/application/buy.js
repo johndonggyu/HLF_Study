@@ -12,7 +12,7 @@ SPDX-License-Identifier: Apache-2.0
  * 6. Process response
  */
 
-'use strict';
+'use strict';  
 
 // Bring key classes into scope, most importantly Fabric SDK network class
 const fs = require('fs');
