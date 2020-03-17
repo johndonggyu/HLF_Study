@@ -8,6 +8,11 @@ SPDX-License-Identifier: Apache-2.0
 https://beomy.tistory.com/13 참고
 */
 'use strict';
-
+/* written by KDG - const cpcontract
+const는 재할당이 금지된다. const는 반드시 선언과 동시에 할당이 이뤄져야 한다.
+const는 let과 마찬가지로 블록 레벨 스코프를 가진다.
+객체라면 객체에 대한 참조를 변경하지 못하고, 객체의 프로퍼티는 보호되지 않는다.
+https://poiemaweb.com/es6-block-scope 참고
+*/
 const cpcontract = require('./lib/papercontract.js');
 module.exports.contracts = [cpcontract];
