@@ -1,7 +1,9 @@
 /*
 SPDX-License-Identifier: Apache-2.0
 */
-
+/* written by KDG - ecmaVersion 8
+ECMAscript 8 버전의 표준을 따르고 있음을 말한다.
+*/
 module.exports = {
     env: {
         node: true,
