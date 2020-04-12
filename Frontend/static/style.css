@@ -149,3 +149,41 @@
 a:link{
 	text-decoration: none!important;
 }
+/* sign */
+.sign-box{
+	margin: 20% 10px;
+	padding: 10px;
+	font-size: 16px;
+    text-align: center;
+    background-color: #ededed;
+    height: 350px;
+}
+.in-sign-box{
+	background-color: #f7fbfc;
+	padding: 10px 10px;
+	height: 80%;
+}
+.nsignbtn{
+	padding: 10px;
+	width: 150px;
+	background-color: #bebebe;
+	border: 1px solid #bebebe;
+	margin-right: 6px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.signbtn{
+	padding: 10px;
+	width: 150px;
+	background-color: #3498db;
+	border: 1px solid #3498db;
+	margin-left: 6px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.signbtns{
+	margin: 15px 0px;
+}
+.signtext{
+	font-weight: bold;
+}
