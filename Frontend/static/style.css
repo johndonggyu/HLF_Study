@@ -1,6 +1,4 @@
-/* tag */
-
-/* class */
+/* login */
 .text-center {
 	overflow: hidden;
 	position: relative;
@@ -21,9 +19,6 @@
     max-width: 330px;
     padding: 15px;
     margin: 100px auto;
-}
-.font-weight-bold{
-	font-weight: bold!important;
 }
 .form-signin input[type="text"], 
 .form-signin input[type="password"] {
@@ -46,4 +41,75 @@
 .login-inputs{
 	padding: 0px 30px;
 }
-/* id */
+/* main */
+.main-header{
+	font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #f7fbfc;
+    height: 47px;
+}
+.help{
+	padding-left: 5px;
+	float:left;
+}
+.sidemenu{
+	padding-right: 5px;
+	float:right;	
+}
+.vote-container{
+	margin-top: 200px;
+}
+.check, .vote, .myvote{
+	display: block;
+	width: 360px;
+	height: 120px;
+	background-color: #e0e0e0;
+	text-align:left;
+}
+.txt{
+	display: block;
+}
+.txt1{
+	/*border: 1px solid;*/
+	width:220px;
+	height: 70px;
+	float:right;
+}
+#txt_1, #txt_2, #txt_3{
+	padding-top: 35px;
+	padding-bottom: 5px;
+	font-size: 18px;
+	color: black;
+}
+#txtln_1, #txtln_2, #txtln_3{
+	font-weight: 600;
+	font-size: 11px;
+	color: black;
+}
+.txtimg{
+	float:left;
+	width:100px;
+	height:108px;
+	padding: 10px;
+	margin: auto 20px;
+}
+/* help */
+.help-box{
+	margin: 60% 30px;
+	padding: 10px;
+	font-size: 16px;
+    text-align: center;
+    background-color: rgba(247, 251, 252, 0.28);
+}
+.help-email{
+	display:block;
+	font-weight: bold;
+}
+.help-text{
+	display:block;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-size: 11px;
+	font-weight: bold;
+}
