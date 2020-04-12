@@ -60,7 +60,7 @@
 .vote-container{
 	margin-top: 200px;
 }
-.check, .vote, .myvote{
+.promise, .vote, .myvote{
 	display: block;
 	width: 360px;
 	height: 120px;
