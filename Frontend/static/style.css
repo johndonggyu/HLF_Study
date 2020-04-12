@@ -113,3 +113,39 @@
 	font-size: 11px;
 	font-weight: bold;
 }
+/* promise */
+.votecards{
+	margin-top: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.votecard img{
+	height: 85px;
+	width: 85px;
+	margin: 5px;
+}
+.card {
+	background-color: #fafafa;
+	height: 190px;	
+	box-shadow: 3px 3px 3px 3px gray;
+	color:black;
+}
+.card-title{
+	text-align: right;
+	padding-right: 20px;
+	position: relative;
+	top: -55px;
+	font-weight: bold;
+	font-size: 24px;
+	text-decoration: none!important;
+}
+.card-text2{
+	font-size: 12px;
+	position: relative;
+	top: -30px;
+	text-decoration: none!important;
+	/*border: 1px solid;*/
+}
+a:link{
+	text-decoration: none!important;
+}
