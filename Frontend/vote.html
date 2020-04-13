@@ -10,6 +10,19 @@
 
     <link rel="stylesheet" href="./static/style.css">
     <title>Help Page</title>
+    <script>
+    	var votecheck = function(num) {
+    		var str = "";
+    		if(num == 1) str = "stamp1";
+    		else if(num == 2) str = "stamp2"; 
+    		var stamp = document.getElementById(str);
+			if(stamp.innerHTML.length != 0){
+				stamp.innerHTML="";
+			}else{
+				stamp.innerHTML="<img style='text-align:center;width:50px;height:50px;margin:auto auto;' src='./img/election.jpg'>";
+			}
+    	}
+    </script>
   </head>
   <body class="loginbody">
     <div class="text-center">
@@ -19,31 +32,39 @@
     		<a href="javascript:if(confirm('로그아웃하시겠습니까?'))document.location.href='./login.html';"><img class="sidemenu mb-4" src="./img/iconfinder_Meatballs_Menu_5349755.png" alt width="45" height="40"></a>
     	</div>
 
-    	<div class="sign-box">
-    		<div class="in-sign-box"> 
-    			<p class="signtext">유의사항</p>
-    			<p>-</p><p>-</p><p>-</p><p>-</p><p>-</p>
-    		</div>
-    		<div class="signbtns">
-    		<button  data-toggle="modal" data-target="#exampleModal2" class="nsignbtn btn btn-primary">동의안함</button>
-    		<button onclick="document.location.href='./vote.html'" class="signbtn btn btn-primary">동의함</button>
-    		</div>
+    	<div class="vote-banner">
+    		<span class="vote-date">2020 상명대 총 선거</span>
+    		<span class="vote-name">총학생회</span>
     	</div>
-    </div>
 
-    <!-- Modal -->
-	<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-	  <div class="modal-dialog modal-dialog-centered" role="document">
-	    <div class="modal-content small-modal-content">
-	      <div class="modal-body" style="text-align: center;">
-	        <span style="font-weight: bold;">동의하지 않으셨습니다.<br>홈으로 돌아갑니다.</span>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-primary" onclick="document.location.href='./main.html'">OK</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+    	<div class="vote-table">
+    		<table class="table">
+    			<tbody>
+    				<tr class="vote-tr">
+    					<td class="profile">
+    						<img class="profile-img" src="./img/gunny.png">
+    						<span class="vol-name">이건희 - 정후보1</span>
+    						<span class="vol-id">경영학과 201700000</span>
+    					</td>
+    					<td class="td" onclick="votecheck(1)">
+    						<div id="stamp1" class="stamp1"></div>
+    					</td>
+    				</tr>
+    				<tr class="vote-tr">
+    					<td class="profile">
+    						<img class="profile-img" src="./img/steve.png">
+    						<span class="vol-name">스티브 - 정후보2</span>
+    						<span class="vol-id">경영학과 201700000</span>
+    					</td>
+    					<td class="td" onclick="votecheck(2)">
+    						<div id="stamp2" class="stamp2"></div>
+    					</td>
+    				</tr>
+    			</tbody>
+    		</table>
+    	</div>
+
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
