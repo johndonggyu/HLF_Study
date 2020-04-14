@@ -256,3 +256,67 @@ a:link{
 .stamp1, .stamp2{
 	margin-top: 40px;
 }
+.vote-box{
+}
+.votebtns{
+}
+.vote-modal{
+	background-color: #f7fbfc;
+}
+.vote-modal > .modal-body{
+
+}
+.vote-modal-footer{
+	display: inline;
+	text-align: center;
+}
+.modal-body > .mb1{
+	font-weight: bold;
+}
+.modal-body > .mb2{
+	font-weight: bold;
+	margin-top: -10px;
+	margin-bottom: -10px;
+	font-size: 12px;
+}
+.cancel-vote{
+	width: 120px;
+	background-color: #bebebe;
+	border: 1px solid #bebebe;
+	font-weight: bold;
+	font-size: 16px;
+}
+.confirm-vote{
+	width: 120px;
+	background-color: #3498db;
+	border: 1px solid #3498db;
+	font-weight: bold;
+	font-size: 16px;
+}
+.fin-box{
+	margin: 140px 30px;
+	width: 300px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	font-size: 16px;
+    text-align: center;
+    height: 167px;
+	background-color: #ffffff;
+}
+.text-vote{
+	font-size: 15px;
+}
+.text-vote > span{
+	display: inline-block;
+}
+.finbtn{
+	width: 100%;
+	background-color: #3498db;
+	border: 1px solid #3498db;
+	margin-top: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	font-size: 16px;
+}

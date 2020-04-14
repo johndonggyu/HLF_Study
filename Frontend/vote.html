@@ -64,7 +64,28 @@
     		</table>
     	</div>
 
+    	<div class="vote-box">
+    		<div class="votebtns">
+    			<button data-toggle="modal" data-target="#exampleModal3" class="signbtn btn btn-primary">투표하기</button>
+    		</div>
+    	</div>
     </div>
+
+    <!-- Modal -->
+	<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content small-modal-content vote-modal">
+	      <div class="modal-body" style="text-align: center;">
+	        <p class="mb1">스티브를 선택하신 것이 맞습니까?</p>
+	        <p class="mb2">투표를 하신 후에는 변경할 수 없습니다.</p>
+	      </div>
+	      <div class="vote-modal-footer modal-footer">
+	        <button type="button" class="cancel-vote btn btn-primary" data-dismiss="modal">취소</button>
+	        <button type="button" class="confirm-vote btn btn-primary" onclick="document.location.href='./finvote.html'">확인</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
