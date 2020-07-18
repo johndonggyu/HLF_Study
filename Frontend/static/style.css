@@ -58,7 +58,7 @@
 	float:right;	
 }
 .vote-container{
-	margin-top: 200px;
+	/*margin-top: 200px;*/
 }
 .promise, .vote, .myvote{
 	display: block;
@@ -322,7 +322,7 @@ a:link{
 }
 /* myvote */
 .myvote-cards{
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	margin-left: 20px;
 	margin-right: 20px;
 }
