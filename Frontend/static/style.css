@@ -102,6 +102,18 @@
     text-align: center;
     background-color: rgba(247, 251, 252, 0.28);
 }
+.help-box-btns{
+ 	padding: 10px;
+/*	margin-right: 6px;
+*/	font-weight: bold;
+	font-size: 16px;
+}
+.help-box-btn{
+	width: 115px;
+	background-color: rgba(247, 251, 252, 0.28);
+	font-weight: bold;
+	font-size: 16px;
+}
 .help-email{
 	display:block;
 	font-weight: bold;
