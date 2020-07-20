@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="./static/style.css">
     <title>Help Page</title>
     <script>
-        var votecheck = function(num) {
-            var str = "";
-            if(num == 1) str = "stamp1";
-            else if(num == 2) str = "stamp2"; 
-            var stamp = document.getElementById(str);
-            if(stamp.innerHTML.length != 0){
-                stamp.innerHTML="";
-            }else{
-                stamp.innerHTML="<img style='text-align:center;width:50px;height:50px;margin:auto auto;' src='./img/election.jpg'>";
-            }
+    var votecheck = function(num) {
+        var str = "";
+        if (num == 1) str = "stamp1";
+        else if (num == 2) str = "stamp2";
+        var stamp = document.getElementById(str);
+        if (stamp.innerHTML.length != 0) {
+            stamp.innerHTML = "";
+        } else {
+            stamp.innerHTML = "<img style='text-align:center;width:50px;height:50px;margin:auto auto;' src='./img/election.jpg'>";
         }
+    }
     </script>
 </head>
 
@@ -36,7 +36,7 @@
             <span class="vote-name">총학생회</span>
         </div>
         <!-- vote-table slide -->
-        <div id="carouselExampleIndicators" class="carousel slide vote-table" style="height:300px;" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide vote-table" style="height:300px;" data-ride="carousel" data-interval="false">
             <ol class="carousel-indicators">
                 <li style="background-color:#3498DB;width:10px;height:10px;border-radius:50% / 50%;" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li style="background-color:#3498DB;width:10px;height:10px;border-radius:50% / 50%;" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -144,7 +144,6 @@
             </div>
         </div>
     </div>
-    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
