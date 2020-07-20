@@ -20,23 +20,40 @@
         </div>
         <!-- title -->
         <div style="background-color:#E0E0E0; height: 40px;margin: 20px;">
-            <div style="padding:5px;font-weight: bold;font-size:18px;">등록된 선거</div>
+            <div style="padding:5px;font-weight: bold;font-size:18px;">등록된 선거<span style="float:right;cursor:pointer;" onclick="document.location.href='#';">></span></div>
+
         </div>
         <!-- title end -->
         <!-- content -->
-        <div style="background-color:#FAFAFA;margin: 20px;padding:10px;">
+        <div style="background-color:#FAFAFA;margin: 20px;padding:10px;cursor:pointer;" data-toggle="modal" data-target="#exampleModal">
             <div style="margin-bottom:10px;">
                 <div style="font-size:12px;color:#9E9FA1;text-align: right;margin-right:40px;margin-bottom:10px;">20.07.18&nbsp;&nbsp;&nbsp;&nbsp;D-xx</div>
                 <div style="font-size:14px;text-align: left;">2020 상명대학교 총학생회 선거</div>
             </div>
         </div>
-        <div style="background-color:#FAFAFA;margin: 20px;padding:10px;">
+        <div style="background-color:#FAFAFA;margin: 20px;padding:10px;cursor:pointer;" data-toggle="modal" data-target="#exampleModal">
             <div style="margin-bottom:10px;">
                 <div style="font-size:12px;color:#9E9FA1;text-align: right;margin-right:40px;margin-bottom:10px;">20.07.18&nbsp;&nbsp;&nbsp;&nbsp;D-xx</div>
                 <div style="font-size:14px;text-align: left;">2020 상명대학교 사범대 학생회 선거</div>
             </div>
         </div>
         <!-- content end -->
+        <!-- modal start -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" style="margin:70px;">
+                    <div class="modal-body" style="text-align: center;">
+                        2020 상명대학교 총학생회 선거
+                    </div>
+                    <div class="modal-footer" style="justify-content: center;">
+                        <button type="button" class="btn btn-primary" style="background-color:#3498DB;border:1px solid #3498DB;" onclick="document.location.href='#'">선거 시작</button>
+                        <button type="button" style="background-color:#3498DB;border:1px solid #3498DB;" class="btn btn-primary" onclick="document.location.href='#'">선거 수정</button>
+                        <button type="button" style="background-color:#3498DB;border:1px solid #3498DB;" class="btn btn-primary" onclick="document.location.href='#'">선거 삭제</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal end -->
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
