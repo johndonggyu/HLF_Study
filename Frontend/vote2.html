@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/style.css">
+    <title>Help Page</title>
+    <script>
+        var votecheck = function(num) {
+            var str = "";
+            if(num == 1) str = "stamp1";
+            else if(num == 2) str = "stamp2"; 
+            var stamp = document.getElementById(str);
+            if(stamp.innerHTML.length != 0){
+                stamp.innerHTML="";
+            }else{
+                stamp.innerHTML="<img style='text-align:center;width:50px;height:50px;margin:auto auto;' src='./img/election.jpg'>";
+            }
+        }
+    </script>
+</head>
+
+<body class="loginbody">
+    <div class="text-center">
+        <div class="main-header">
+            <a href="./main.html"><img class="mb-4" src="./img/smulogo4.png" alt width="150" height="47"></a>
+            <a href="./help.html"><img class="help mb-4" src="./img/iconfinder_Faqs_5349749.png" alt width="45" height="40"></a>
+            <a href="javascript:if(confirm('로그아웃하시겠습니까?'))document.location.href='./login.html';"><img class="sidemenu mb-4" src="./img/iconfinder_Meatballs_Menu_5349755.png" alt width="45" height="40"></a>
+        </div>
+        <div class="vote-banner">
+            <span class="vote-date">2020 상명대 선거</span>
+            <span class="vote-name">총학생회</span>
+        </div>
+        <!-- vote-table -->
+        <div style="background-color:#FAFAFA;height:300px;" class="vote-table">
+            <!-- radio input loop -->
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="radio" id="giho_1" name="giho">
+                    </div>
+                </div>
+                <label class="form-control" style="background-color:#FAFAFA;text-align:left;" for="giho_1">기호 1번 S.Catch</label>
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="radio" id="giho_2" name="giho">
+                    </div>
+                </div>
+                <label class="form-control" style="background-color:#FAFAFA;text-align:left;" for="giho_2">기호 2번 브릿지</label>
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="radio" id="giho_3" name="giho">
+                    </div>
+                </div>
+                <label class="form-control" style="background-color:#FAFAFA;text-align:left;" for="giho_3">기권</label>
+            </div>
+            <!-- radio input loop end -->
+        </div>
+        <!-- vote-table end -->
+        <div class="vote-box">
+            <div class="votebtns">
+                <button class="signbtn btn btn-secondary" style="background-color:#6C757D;border-color:#6C757D;" onclick="document.location.href='./vote.html';">뒤로가기</button>
+                <button class="signbtn btn btn-primary" onclick="document.location.href='./finvote.html';">투표하기</button>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

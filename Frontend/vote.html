@@ -1,96 +1,154 @@
 <!doctype html>
 <html lang="ko">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <link rel="stylesheet" href="./static/style.css">
     <title>Help Page</title>
     <script>
-    	var votecheck = function(num) {
-    		var str = "";
-    		if(num == 1) str = "stamp1";
-    		else if(num == 2) str = "stamp2"; 
-    		var stamp = document.getElementById(str);
-			if(stamp.innerHTML.length != 0){
-				stamp.innerHTML="";
-			}else{
-				stamp.innerHTML="<img style='text-align:center;width:50px;height:50px;margin:auto auto;' src='./img/election.jpg'>";
-			}
-    	}
+    var votecheck = function(num) {
+        var str = "";
+        if (num == 1) str = "stamp1";
+        else if (num == 2) str = "stamp2";
+        var stamp = document.getElementById(str);
+        if (stamp.innerHTML.length != 0) {
+            stamp.innerHTML = "";
+        } else {
+            stamp.innerHTML = "<img style='text-align:center;width:50px;height:50px;margin:auto auto;' src='./img/election.jpg'>";
+        }
+    }
     </script>
-  </head>
-  <body class="loginbody">
+</head>
+
+<body class="loginbody">
     <div class="text-center">
-    	<div class="main-header">
-    		<a href="./main.html"><img class="mb-4" src="./img/smulogo4.png" alt width="150" height="47"></a>
-    		<a href="./help.html"><img class="help mb-4" src="./img/iconfinder_Faqs_5349749.png" alt width="45" height="40"></a>
-    		<a href="javascript:if(confirm('로그아웃하시겠습니까?'))document.location.href='./login.html';"><img class="sidemenu mb-4" src="./img/iconfinder_Meatballs_Menu_5349755.png" alt width="45" height="40"></a>
-    	</div>
-
-    	<div class="vote-banner">
-    		<span class="vote-date">2020 상명대 선거</span>
-    		<span class="vote-name">총학생회</span>
-    	</div>
-
-    	<div class="vote-table">
-    		<table class="table">
-    			<tbody>
-    				<tr class="vote-tr">
-    					<td class="profile">
-    						<img class="profile-img" src="./img/gunny.png">
-    						<span class="vol-name">이건희 - 정후보1</span>
-    						<span class="vol-id">경영학과 201700000</span>
-    					</td>
-    					<td class="td" onclick="votecheck(1)">
-    						<div id="stamp1" class="stamp1"></div>
-    					</td>
-    				</tr>
-    				<tr class="vote-tr">
-    					<td class="profile">
-    						<img class="profile-img" src="./img/steve.png">
-    						<span class="vol-name">스티브 - 정후보2</span>
-    						<span class="vol-id">경영학과 201700000</span>
-    					</td>
-    					<td class="td" onclick="votecheck(2)">
-    						<div id="stamp2" class="stamp2"></div>
-    					</td>
-    				</tr>
-    			</tbody>
-    		</table>
-    	</div>
-
-    	<div class="vote-box">
-    		<div class="votebtns">
-    			<button data-toggle="modal" data-target="#exampleModal3" class="signbtn btn btn-primary">투표하기</button>
-    		</div>
-    	</div>
+        <div class="main-header">
+            <a href="./main.html"><img class="mb-4" src="./img/smulogo4.png" alt width="150" height="47"></a>
+            <a href="./help.html"><img class="help mb-4" src="./img/iconfinder_Faqs_5349749.png" alt width="45" height="40"></a>
+            <a href="javascript:if(confirm('로그아웃하시겠습니까?'))document.location.href='./login.html';"><img class="sidemenu mb-4" src="./img/iconfinder_Meatballs_Menu_5349755.png" alt width="45" height="40"></a>
+        </div>
+        <div class="vote-banner">
+            <span class="vote-date">2020 상명대 선거</span>
+            <span class="vote-name">총학생회</span>
+        </div>
+        <!-- vote-table slide -->
+        <div id="carouselExampleIndicators" class="carousel slide vote-table" style="height:300px;" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators">
+                <li style="background-color:#3498DB;width:10px;height:10px;border-radius:50% / 50%;" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li style="background-color:#3498DB;width:10px;height:10px;border-radius:50% / 50%;" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li style="background-color:#3498DB;width:10px;height:10px;border-radius:50% / 50%;" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- hubo banner -->
+                    <div style="height:38%;background-color:#6BB9ED;">
+                        <!-- title -->
+                        <div><span style="font-weight:bold;font-size:22px;">S.Catch</span></div>
+                        <!-- logo -->
+                        <div style="padding-bottom:10px;"><img style="width:70px;height:70px;" src="./img/bridge.png"></div>
+                    </div>
+                    <!-- hubo -->
+                    <div style="height:62%;background-color:#FAFAFA;">
+                        <!-- hubo 1-->
+                        <div style="width:100px;height:150px;margin:5px 20px;float:left;">
+                            <p style="font-weight: bold;margin-bottom:0.4rem;">정후보</p>
+                            <img style="width:50px;height:50px;margin-bottom:0.4rem;" src="./img/user.png">
+                            <p style="font-size:12px;color:#9E9FA1;text-align: center;">이땡땡<br>컴퓨터과학과<br>4학년 17학번</p>
+                        </div>
+                        <!-- hubo 2-->
+                        <div style="width:100px;height:150px;display:inline-block;margin:5px 20px;float:right;">
+                            <p style="font-weight: bold;margin-bottom:0.4rem;">부후보</p>
+                            <img style="width:50px;height:50px;margin-bottom:0.4rem;" src="./img/user.png">
+                            <p style="font-size:12px;color:#9E9FA1;text-align: center;">김와와<br>경영학과<br>3학년 18학번</p>
+                        </div>
+                        <!-- slide index -->
+                        <br>
+                        <span style="width:30px;height:15px;display:inline-block;">
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- hubo banner -->
+                    <div style="height:38%;background-color:#6BB9ED;">
+                        <!-- title -->
+                        <div><span style="font-weight:bold;font-size:22px;">S.Catch</span></div>
+                        <!-- logo -->
+                        <div style="padding-bottom:10px;"><img style="width:70px;height:70px;" src="./img/bridge.png"></div>
+                    </div>
+                    <!-- hubo -->
+                    <div style="height:62%;background-color:#FAFAFA;">
+                        <!-- hubo 1-->
+                        <div style="width:100px;height:150px;margin:5px 20px;float:left;">
+                            <p style="font-weight: bold;margin-bottom:0.4rem;">정후보</p>
+                            <img style="width:50px;height:50px;margin-bottom:0.4rem;" src="./img/user.png">
+                            <p style="font-size:12px;color:#9E9FA1;text-align: center;">이땡땡<br>컴퓨터과학과<br>4학년 17학번</p>
+                        </div>
+                        <!-- hubo 2-->
+                        <div style="width:100px;height:150px;display:inline-block;margin:5px 20px;float:right;">
+                            <p style="font-weight: bold;margin-bottom:0.4rem;">부후보</p>
+                            <img style="width:50px;height:50px;margin-bottom:0.4rem;" src="./img/user.png">
+                            <p style="font-size:12px;color:#9E9FA1;text-align: center;">김와와<br>경영학과<br>3학년 18학번</p>
+                        </div>
+                        <!-- slide index -->
+                        <br>
+                        <span style="width:30px;height:15px;display:inline-block;">
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- hubo banner -->
+                    <div style="height:38%;background-color:#6BB9ED;">
+                        <!-- title -->
+                        <div><span style="font-weight:bold;font-size:22px;">S.Catch</span></div>
+                        <!-- logo -->
+                        <div style="padding-bottom:10px;"><img style="width:70px;height:70px;" src="./img/bridge.png"></div>
+                    </div>
+                    <!-- hubo -->
+                    <div style="height:62%;background-color:#FAFAFA;">
+                        <!-- hubo 1-->
+                        <div style="width:100px;height:150px;margin:5px 20px;float:left;">
+                            <p style="font-weight: bold;margin-bottom:0.4rem;">정후보</p>
+                            <img style="width:50px;height:50px;margin-bottom:0.4rem;" src="./img/user.png">
+                            <p style="font-size:12px;color:#9E9FA1;text-align: center;">이땡땡<br>컴퓨터과학과<br>4학년 17학번</p>
+                        </div>
+                        <!-- hubo 2-->
+                        <div style="width:100px;height:150px;display:inline-block;margin:5px 20px;float:right;">
+                            <p style="font-weight: bold;margin-bottom:0.4rem;">부후보</p>
+                            <img style="width:50px;height:50px;margin-bottom:0.4rem;" src="./img/user.png">
+                            <p style="font-size:12px;color:#9E9FA1;text-align: center;">김와와<br>경영학과<br>3학년 18학번</p>
+                        </div>
+                        <!-- slide index -->
+                        <br>
+                        <span style="width:30px;height:15px;display:inline-block;">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- slide end -->
+        <div class="vote-box">
+            <div class="votebtns">
+                <button class="signbtn btn btn-primary" onclick="document.location.href='./vote2.html';">투표하기</button>
+            </div>
+        </div>
     </div>
-
-    <!-- Modal -->
-	<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-	  <div class="modal-dialog modal-dialog-centered" role="document">
-	    <div class="modal-content small-modal-content vote-modal">
-	      <div class="modal-body" style="text-align: center;">
-	        <p class="mb1">스티브를 선택하신 것이 맞습니까?</p>
-	        <p class="mb2">투표를 하신 후에는 변경할 수 없습니다.</p>
-	      </div>
-	      <div class="vote-modal-footer modal-footer">
-	        <button type="button" class="cancel-vote btn btn-primary" data-dismiss="modal">취소</button>
-	        <button type="button" class="confirm-vote btn btn-primary" onclick="document.location.href='./finvote.html'">확인</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>

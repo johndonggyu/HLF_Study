@@ -262,7 +262,8 @@ a:link{
 	font-weight: bold;
 }
 .vote-table{
-	padding: 0px 30px;
+	margin: 25px auto;
+	width: 300px;
 }
 .vote-tr:nth-child(odd){
 	border-top: 6px solid #769fcd;
