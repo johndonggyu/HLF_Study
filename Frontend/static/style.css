@@ -26,7 +26,7 @@
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
-.form-signin .form-control {
+.form-signin .form-control{
     position: relative;
     box-sizing: border-box;
     height: auto;
@@ -160,6 +160,41 @@
 }
 a:link{
 	text-decoration: none!important;
+}
+/* register vote */
+.register-box{
+	margin: 20% 10px;
+	font-size: 16px;
+    text-align: center;
+    background-color: #ffffff;
+}
+.in-register-box{
+	margin: 10% 5px;
+	background-color: #ffffff;
+	padding: 18px 10px;
+}
+.registertext{
+	text-align: left;
+	margin: 5px;
+	color: 	#9e9e9e;
+	font-size: 12px;
+	font-weight: bold;
+}
+.nregisterbtn{
+	padding: 10px;
+	width: 49.3%;
+	background-color: #bebebe;
+	font-weight: bold;
+	font-size: 16px;
+	color: #ffffff;	
+}
+.registerbtn{
+	padding: 10px;
+	width: 49.3%;
+	background-color: #3498db;
+	font-weight: bold;
+	font-size: 16px;	
+	color: #ffffff;	
 }
 /* sign */
 .sign-box{
