@@ -25,7 +25,7 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="1" class="manage-slide-li"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active manage-carousel-item">
                     <!-- title -->
                     <div class="manage-carousel-item-title">
                         <div class="manage-carousel-item-title-inner">등록된 선거</div>
@@ -50,7 +50,18 @@
                             <div class="manage-carousel-item-content-3">2020 상명대학교 사범대 학생회 선거</div>
                         </div>
                     </div>
-
+                    <div class="manage-carousel-item-content" data-toggle="modal" data-target="#exampleModal">
+                        <div class="manage-carousel-item-content-1">
+                            <div class="manage-carousel-item-content-2">20.07.18&nbsp;&nbsp;&nbsp;&nbsp;D-xx</div>
+                            <div class="manage-carousel-item-content-3">2020 상명대학교 사범대 학생회 선거</div>
+                        </div>
+                    </div>
+                    <div class="manage-carousel-item-content" data-toggle="modal" data-target="#exampleModal">
+                        <div class="manage-carousel-item-content-1">
+                            <div class="manage-carousel-item-content-2">20.07.18&nbsp;&nbsp;&nbsp;&nbsp;D-xx</div>
+                            <div class="manage-carousel-item-content-3">2020 상명대학교 사범대 학생회 선거</div>
+                        </div>
+                    </div>
                     <!-- content end -->
                 </div>
                 <div class="carousel-item">
@@ -187,15 +198,15 @@
                 var params = {};
                 window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str, key, value) { params[key] = value; });
                 if (params.id == 2){
-                    $('.carousel-indicators > li:nth-child(2)').attr('class','active');
-                    $('.carousel-indicators > li:nth-child(1)').attr('class','')
-                    $('.carousel-inner > .carousel-item:nth-child(2)').attr('class', 'carousel-item active');
-                    $('.carousel-inner > .carousel-item:nth-child(1)').attr('class', 'carousel-item');
+                    $('.carousel-indicators > li:nth-child(2)').attr('class','active manage-slide-li');
+                    $('.carousel-indicators > li:nth-child(1)').attr('class','manage-slide-li')
+                    $('.carousel-inner > .carousel-item:nth-child(2)').attr('class', 'carousel-item active manage-carousel-item');
+                    $('.carousel-inner > .carousel-item:nth-child(1)').attr('class', 'carousel-item manage-carousel-item');
                 }else{
-                    $('.carousel-inner > .carousel-item:nth-child(2)').attr('class', 'carousel-item');
-                    $('.carousel-indicators > li:nth-child(2)').attr('class','')
-                    $('.carousel-indicators > li:nth-child(1)').attr('class','active');
-                    $('.carousel-inner > .carousel-item:nth-child(1)').attr('class', 'carousel-item active');
+                    $('.carousel-inner > .carousel-item:nth-child(2)').attr('class', 'carousel-item manage-carousel-item');
+                    $('.carousel-indicators > li:nth-child(2)').attr('class','manage-slide-li')
+                    $('.carousel-indicators > li:nth-child(1)').attr('class','active manage-slide-li');
+                    $('.carousel-inner > .carousel-item:nth-child(1)').attr('class', 'carousel-item active manage-carousel-item');
                 }
             })
 

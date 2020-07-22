@@ -128,7 +128,7 @@
 
 .help-box-btns {
     padding: 10px;
-    /*	margin-right: 6px;
+    /*  margin-right: 6px;
 */
     font-weight: bold;
     font-size: 16px;
@@ -197,9 +197,9 @@ a:link {
 }
 
 /* register vote */
-.register-box{
-	margin: 10% 10px;
-	font-size: 16px;
+.register-box {
+    margin: 10% 10px;
+    font-size: 16px;
     text-align: center;
     background-color: #ffffff;
 }
@@ -237,46 +237,51 @@ a:link {
 }
 
 /* register candidate */
-.candidate-img-box{
-	margin: 0% 0px;
-	padding-top: 50px;
-	padding-bottom: 3px;
-	background-color: #6BB9ED;
+.candidate-img-box {
+    margin: 0% 0px;
+    padding-top: 50px;
+    padding-bottom: 3px;
+    background-color: #6BB9ED;
 }
-.in-candidate-box{
-	margin: 0% 5px;
-	background-color: #ffffff;
-	padding-top: 18px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
+
+.in-candidate-box {
+    margin: 0% 5px;
+    background-color: #ffffff;
+    padding-top: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
-.candidatebtns{
-	margin: 0px;
+
+.candidatebtns {
+    margin: 0px;
 }
-.ncandidatebtn{
-	padding: 10px;
-	width: 49.4%;
-	background-color: #bebebe;
-	font-weight: bold;
-	font-size: 16px;
-	color: #ffffff;
+
+.ncandidatebtn {
+    padding: 10px;
+    width: 49.4%;
+    background-color: #bebebe;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
 }
-.candidatebtn{
-	padding: 10px;
-	width: 49.3%;
-	background-color: #3498db;
-	font-weight: bold;
-	font-size: 16px;	
-	color: #ffffff;	
+
+.candidatebtn {
+    padding: 10px;
+    width: 49.3%;
+    background-color: #3498db;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
 }
-.candidatetext{
-	text-align: left;
-	margin-left: 5px;
-	margin-bottom: 1px;
-	color: 	#9e9e9e;
-	font-size: 12px;
-	font-weight: bold;
+
+.candidatetext {
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 1px;
+    color: #9e9e9e;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 /* sign */
@@ -524,10 +529,10 @@ a:link {
 }
 
 .manage-slide-li {
-    background-color: #3498DB;
-    width: 10px;
-    height: 10px;
-    border-radius: 50% / 50%;
+    background-color: #3498DB !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% / 50% !important;
 }
 
 .manage-carousel-item-title {
@@ -569,4 +574,13 @@ a:link {
 .manage-modal-footer-button {
     background-color: #3498DB;
     border: 1px solid #3498DB;
+}
+
+.manage-carousel-item {
+    height: 480px;
+    overflow-y: scroll;
+}
+
+.manage-carousel-item::-webkit-scrollbar {
+    width: 0px;
 }
