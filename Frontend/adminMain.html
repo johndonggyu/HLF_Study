@@ -27,14 +27,14 @@
 	    			<span id="txtln_1">선거 정보를 등록할 수 있습니다.</span>
 	    		</div>
     		</span></a>
-    		<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="myvote managevote">
+    		<a href="#" onclick="noElection('manage')"><span class="myvote managevote">
     			<img class="txtimg" src="./img/politics (2).png">
     			<div class="txt1">
 	    			<span id="txt_2" class="txt font-weight-bolder">선거 관리하기</span>
 	    			<span id="txtln_2">등록된 선거를 관리할 수 있습니다.</span>
 	    		</div>
     		</span></a>
-            <a href="#" data-toggle="modal" data-target="#exampleModal"><span class="myvote countvote">
+            <a href="#" onclick="noEleciton('count')"><span class="myvote countvote">
     			<img class="txtimg" src="./img/poll.png">
     			<div class="txt1">
 	    			<span id="txt_3" class="txt font-weight-bolder">투표율 확인</span>
@@ -43,7 +43,6 @@
     		</span></a>
     	</div>
     </div>
-
     <!-- Modal -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-dialog-centered" role="document">
@@ -64,5 +63,18 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        function noElection(option){
+            if(option === 'manage'){
+                document.location.href='./adminCreated.html';
+            }
+            else if(option == 'count'){
+                document.location.href='./adminNow.html';
+            }
+            else{
+                $('#exampleModal').modal('toggle');
+            }
+        }
+    </script>
   </body>
 </html>
