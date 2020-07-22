@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./static/style.css">
+    <title>Register Vote Page</title>
+  </head>
+  <body class="loginbody">
+    <div class="text-center">
+    	<div class="main-header">
+    		<a href="./adminMain.html"><img class="mb-4" src="./img/smulogo4.png" alt width="150" height="47"></a>
+    		<a href="./suggestion.html"><img class="help mb-4" src="./img/iconfinder_Faqs_5349749.png" alt width="45" height="40"></a>
+    		<a href="javascript:if(confirm('로그아웃하시겠습니까?'))document.location.href='./login.html';"><img class="sidemenu mb-4" src="./img/iconfinder_Meatballs_Menu_5349755.png" alt width="45" height="40"></a>
+    	</div>
+
+    	<form action="registercandidate2.html">
+    		<div class="register-box">
+    			<div data-toggle="modal" data-target="#exampleModal4" class="btn candidate-img-box" style="border-radius: 0; width: 100%">
+    				<div data-obj-id="oQMoJ" data-obj-type="element" data-text-editable="true" class="" style="position: absolute; top: 97px; left: 20px; width: 80px; height: 20px;"><div data-text-content="true" style="font-size: 12px; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.227) 3px 3px 8px 0px; background-color: rgba(250, 250, 250, 0.49);">선거운동본부</div></div>
+    				<div data-obj-id="ftabY" data-obj-type="icon" class="" style="position: absolute; top: 95px; left: 132.5px; width: 95px; height: 100px;" data-released-from-group="VdIJ0">
+    					<svg xmlns="http://www.w3.org/2000/svg" width="100" height="120" viewBox="0 0 48 48" data-svg-content="true" fill="rgb(255, 255, 255)">
+    						<path d="M24 24c4.42 0 8-3.59 8-8 0-4.42-3.58-8-8-8s-8 3.58-8 8c0 4.41 3.58 8 8 8zm0 4c-5.33 0-16 2.67-16 8v4h32v-4c0-5.33-10.67-8-16-8z"></path></svg></div>
+				<br><br><br><p style="text-align: center; color: #ffffff; font-size: 11px;">여기를 클릭하여<br>선거운동본부 이미지를 등록해주세요.</p>
+    			</div>
+	    		<div class="in-candidate-box"> 
+	    			<p class="registertext">선거운동본부 명칭</p>
+	    			<div class="form-group">
+					    <input type="text" class="form-control" style="height: 24px;" id="electionid" placeholder="선거운동본부 명칭을 입력해 주세요." required autofocus></div>
+	    			<p class="registertext">소견문</p>
+	    			<div class="form-group">
+					    <input type="text" class="form-control" style="height: 24px;" id="electionid" placeholder="소견문 링크를 입력해 주세요." required autofocus></div>
+				</div>
+				<div class="candidatebtns">
+	    		<button class="ncandidatebtn btn"onclick="document.location.href='./registervote.html'">뒤로</button>
+	    		<button class="candidatebtn btn" type="submit">다음</button>
+	    		</div>
+    		</div>
+    	</form>
+    </div>
+
+    <!-- Modal -->
+	<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content small-modal-content vote-modal">
+	      <div class="modal-body" style="text-align: center;">
+	        <b>상명대학교 투표</b>
+	        <small>이(가) 사진에 접근할 수 있도록 허용하시겠습니까?</small>
+	      </div>
+	      <div class="vote-modal-footer modal-footer">
+	        <button type="button" class="cancel-vote btn btn-primary" data-dismiss="modal">취소</button>
+	        <button type="button" class="confirm-vote btn btn-primary" onclick="document.location.href='./registercandidate.html'">확인</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
