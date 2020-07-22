@@ -18,40 +18,180 @@
             <a href="./suggestion.html"><img class="help mb-4" src="./img/iconfinder_Faqs_5349749.png" alt width="45" height="40"></a>
             <a href="javascript:if(confirm('로그아웃하시겠습니까?'))document.location.href='./login.html';"><img class="sidemenu mb-4" src="./img/iconfinder_Meatballs_Menu_5349755.png" alt width="45" height="40"></a>
         </div>
-        <!-- title -->
-        <div style="background-color:#E0E0E0; height: 40px;margin: 20px;">
-            <div style="padding:5px;font-weight: bold;font-size:18px;">진행 중인 선거<span style="float:left;cursor:pointer;" onclick="document.location.href='./adminCreated.html';"><</span></div>
-
-        </div>
-        <!-- title end -->
-        <!-- content -->
-        <div style="background-color:#FAFAFA;margin: 20px;padding:10px;cursor:pointer;" data-toggle="modal" data-target="#exampleModal">
-            <div style="margin-bottom:10px;">
-                <div style="font-size:12px;color:#9E9FA1;text-align: right;margin-right:40px;margin-bottom:10px;">20.07.18&nbsp;&nbsp;&nbsp;&nbsp;D-xx</div>
-                <div style="font-size:14px;text-align: left;">2020 상명대학교 총학생회 선거</div>
-            </div>
-        </div>
-        <!-- content end -->
-        <!-- modal start -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content" style="margin:70px;">
-                    <div class="modal-body" style="text-align: center;">
-                        2020 상명대학교 총학생회 선거
+        <!-- slide start -->
+        <div id="carouselExampleIndicators" class="carousel slide" style="height:550px;" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators" style="position:absolute;bottom:0px;">
+                <li style="background-color:#3498DB;width:10px;height:10px;border-radius:50% / 50%;" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                <li style="background-color:#3498DB;width:10px;height:10px;border-radius:50% / 50%;" data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <!-- title -->
+                    <div style="background-color:#E0E0E0; height: 40px;margin: 20px;">
+                        <div style="padding:5px;font-weight: bold;font-size:18px;">등록된 선거</div>
                     </div>
-                    <div class="modal-footer" style="justify-content: center;">
-                        <button type="button" class="btn btn-primary" style="background-color:#3498DB;border:1px solid #3498DB;" onclick="document.location.href='#'">선거 종료</button>
+                    <!-- title end -->
+                    <!-- content -->
+                    <div style="background-color:#FAFAFA;margin: 20px;padding:10px;cursor:pointer;" data-toggle="modal" data-target="#exampleModal">
+                        <div style="margin-bottom:10px;">
+                            <div style="font-size:12px;color:#9E9FA1;text-align: right;margin-right:40px;margin-bottom:10px;">20.07.18&nbsp;&nbsp;&nbsp;&nbsp;D-xx</div>
+                            <div style="font-size:14px;text-align: left;">2020 상명대학교 총학생회 선거</div>
+                        </div>
                     </div>
+                    <div style="background-color:#FAFAFA;margin: 20px;padding:10px;cursor:pointer;" data-toggle="modal" data-target="#exampleModal">
+                        <div style="margin-bottom:10px;">
+                            <div style="font-size:12px;color:#9E9FA1;text-align: right;margin-right:40px;margin-bottom:10px;">20.07.18&nbsp;&nbsp;&nbsp;&nbsp;D-xx</div>
+                            <div style="font-size:14px;text-align: left;">2020 상명대학교 사범대 학생회 선거</div>
+                        </div>
+                    </div>
+                    <!-- content end -->
                 </div>
-            </div>
-        </div>
-        <!-- modal end -->
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+                <div class="carousel-item active">
+                    <!-- title -->
+                    <div style="background-color:#E0E0E0; height: 40px;margin: 20px;">
+                        <div style="padding:5px;font-weight: bold;font-size:18px;">진행 중인 선거</div> </div> <!-- title end -->
+                                    <!-- content -->
+                                    <div style="background-color:#FAFAFA;margin: 20px;padding:10px;cursor:pointer;" data-toggle="modal" data-target="#exampleModal2">
+                                        <div style="margin-bottom:10px;">
+                                            <div style="font-size:12px;color:#9E9FA1;text-align: right;margin-right:40px;margin-bottom:10px;">20.07.18&nbsp;&nbsp;&nbsp;&nbsp;D-xx</div>
+                                            <div style="font-size:14px;text-align: left;">2020 상명대학교 총학생회 선거</div>
+                                        </div>
+                                    </div>
+                                    <!-- content end -->
+                        </div>
+                        <!-- slide end -->
+                        <!-- modal start -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content" style="margin:70px;">
+                                    <div class="modal-body" style="text-align: center;">
+                                        2020 상명대학교 총학생회 선거
+                                    </div>
+                                    <div class="modal-footer" style="justify-content: center;">
+                                        <button type="button" class="btn btn-primary" style="background-color:#3498DB;border:1px solid #3498DB;" onclick="startElection();">선거 시작</button>
+                                        <button type="button" style="background-color:#3498DB;border:1px solid #3498DB;" class="btn btn-primary" onclick="document.location.href='#'">선거 수정</button>
+                                        <button type="button" style="background-color:#3498DB;border:1px solid #3498DB;" class="btn btn-primary" onclick="deleteElection();">선거 삭제</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal end -->
+                        <!-- modal start -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content" style="margin:70px;">
+                                    <div class="modal-body" style="text-align: center;">
+                                        2020 상명대학교 총학생회 선거
+                                    </div>
+                                    <div class="modal-footer" style="justify-content: center;">
+                                        <button type="button" class="btn btn-primary" style="background-color:#3498DB;border:1px solid #3498DB;" onclick="document.location.href='#'">선거 종료</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal end -->
+                        <!-- modal start -->
+                        <div class="modal fade" id="startElectionModal" tabindex="-1" role="dialog" aria-labelledby="startElectionModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content" style="margin:70px;">
+                                    <div class="modal-body" style="text-align: center;">
+                                        <div style="font-size:medium;">
+                                        선거를 시작하시겠습니까?
+                                        </div>
+                                        <div style="font-size:small;">
+                                            2020 상명대학교 총학생회 선거
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer" style="justify-content: center;">
+                                        <button type="button" class="btn btn-secondary" style="background-color:#BEBEBE;border:1px solid #BEBEBE;width:45%;" data-dismiss="modal">취소</button>
+                                        <button type="button" class="btn btn-primary" style="background-color:#3498DB;border:1px solid #3498DB;width:45%;" onclick="electionStarted();">시작</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal end -->
+                        <!-- modal start -->
+                        <div class="modal fade" id="electionStartedModal" tabindex="-1" role="dialog" aria-labelledby="electionStartedModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content" style="margin:70px;">
+                                    <div class="modal-body" style="text-align: center;">
+                                        <div style="font-size:medium;">
+                                        2020 상명대학교 사범대 학생회 선거
+                                        </div>
+                                        <div style="font-size:small;">
+                                            선거가 시작되었습니다.
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer" style="justify-content: center;">
+                                        <button type="button" class="btn btn-primary" style="background-color:#3498DB;border:1px solid #3498DB;width:45%;" onclick="document.location.href='./adminStarted.html'">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal end -->
+                        <!-- modal start -->
+                        <div class="modal fade" id="deleteElectionModal" tabindex="-1" role="dialog" aria-labelledby="deleteElectionModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content" style="margin:70px;">
+                                    <div class="modal-body" style="text-align: center;">
+                                        <div style="font-size:medium;">
+                                        선거를 삭제하시겠습니까?
+                                        </div>
+                                        <div style="font-size:small;">
+                                            2020 상명대학교 총학생회 선거
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer" style="justify-content: center;">
+                                        <button type="button" class="btn btn-secondary" style="background-color:#BEBEBE;border:1px solid #BEBEBE;width:45%;" data-dismiss="modal">취소</button>
+                                        <button type="button" class="btn btn-primary" style="background-color:#3498DB;border:1px solid #3498DB;width:45%;" onclick="electionDeleted();">삭제</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal end -->
+                        <!-- modal start -->
+                        <div class="modal fade" id="electionDeletedModal" tabindex="-1" role="dialog" aria-labelledby="electionDeletedModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content" style="margin:70px;">
+                                    <div class="modal-body" style="text-align: center;">
+                                        <div style="font-size:medium;">
+                                        2020 상명대학교 사범대 학생회 선거
+                                        </div>
+                                        <div style="font-size:small;">
+                                            선거가 삭제되었습니다.
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer" style="justify-content: center;">
+                                        <button type="button" class="btn btn-primary" style="background-color:#3498DB;border:1px solid #3498DB;width:45%;" onclick="document.location.href='./adminCreated.html'">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal end -->
+                    </div>
+                    <!-- Optional JavaScript -->
+                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+                    <script>
+                        function startElection(){
+                            $('#exampleModal').modal('hide');
+                            $('#startElectionModal').modal('toggle');
+                        }
+                        function electionStarted(){
+                            $('#startElectionModal').modal('hide');
+                            $('#electionStartedModal').modal('toggle');
+                        }
+                        function deleteElection(){
+                            $('#exampleModal').modal('hide');
+                            $('#deleteElectionModal').modal('toggle');
+                        }
+                        function electionDeleted(){
+                            $('#deleteElectionModal').modal('hide');
+                            $('#electionDeletedModal').modal('toggle');
+                        }
+                    </script>
 </body>
 
 </html>
