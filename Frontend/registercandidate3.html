@@ -31,20 +31,20 @@
 	    		<div class="in-candidate-box"> 
 	    			<p class="candidatetext">학과</p>
 	    			<div class="form-group">
-					    <input type="text" class="form-control" style="height: 24px;" id="electionid" placeholder="학과를 입력해 주세요." required autofocus></div>
+					    <input type="text" class="form-control" style="height: 24px;" id="a" placeholder="학과를 입력해 주세요." required autofocus></div>
 	    			<p class="candidatetext">학번</p>
 	    			<div class="form-group">
-					    <input type="text" class="form-control" style="height: 24px;" id="electionid" placeholder="학번을 입력해 주세요." required autofocus></div>
+					    <input type="text" class="form-control" style="height: 24px;" id="b" placeholder="학번을 입력해 주세요." required autofocus></div>
                         <p class="candidatetext">학년</p>
                     <div class="form-group">
-                        <input type="text" class="form-control" style="height: 24px;" id="electionid" placeholder="학년을 입력해 주세요." required autofocus></div>
+                        <input type="text" class="form-control" style="height: 24px;" id="c" placeholder="학년을 입력해 주세요." required autofocus></div>
                     <p class="candidatetext">이름</p>
                     <div class="form-group">
-                        <input type="text" class="form-control" style="height: 24px;" id="electionid" placeholder="이름을 입력해 주세요." required autofocus></div>
+                        <input type="text" class="form-control" style="height: 24px;" id="d" placeholder="이름을 입력해 주세요." required autofocus></div>
 				</div>
 				<div class="candidatebtns">
 	    		<button class="ncandidatebtn btn"onclick="document.location.href='./registercandidate2.html'">뒤로</button>
-	    		<button data-toggle="modal" data-target="#exampleModal5" class="candidatebtn btn" type="submit">확인</button>
+	    		<button class="candidatebtn btn" onclick="register();return false;">확인</button>
 	    		</div>
     		</div>
     	</form>
@@ -85,5 +85,27 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        function register(){
+            var a = $('#a');
+            var b = $('#b');
+            var c = $('#c');
+            var d = $('#d');
+            if(a.val() == ''){
+                a.focus();
+            }else if(b.val() == ''){
+                b.focus();
+            }
+            else if(c.val() == ''){
+                c.focus();
+            }
+            else if(d.val() == ''){
+                d.focus();
+            }
+            else{
+                $('#exampleModal5').modal("toggle");
+            }
+        }
+    </script>
   </body>
 </html>
