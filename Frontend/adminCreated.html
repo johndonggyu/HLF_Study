@@ -84,7 +84,7 @@
                                         2020 상명대학교 총학생회 선거
                                     </div>
                                     <div class="modal-footer" style="justify-content: center;">
-                                        <button type="button" class="btn btn-primary" style="background-color:#3498DB;border:1px solid #3498DB;" onclick="document.location.href='#'">선거 종료</button>
+                                        <button type="button" class="btn btn-primary" style="background-color:#3498DB;border:1px solid #3498DB;width:100%;" onclick="endElection();">선거 종료</button>
                                     </div>
                                 </div>
                             </div>
@@ -193,6 +193,9 @@
                         }
                         function modifyElection(){
                             document.location.href='./modifyElection.html';
+                        }
+                        function endElection(){
+                            document.location.href='./adminStarted.html';
                         }
                     </script>
 </body>
