@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="modal-footer" style="justify-content: center;">
                                         <button type="button" class="btn btn-primary" style="background-color:#3498DB;border:1px solid #3498DB;" onclick="startElection();">선거 시작</button>
-                                        <button type="button" style="background-color:#3498DB;border:1px solid #3498DB;" class="btn btn-primary" onclick="document.location.href='#'">선거 수정</button>
+                                        <button type="button" style="background-color:#3498DB;border:1px solid #3498DB;" class="btn btn-primary" onclick="modifyElection()">선거 수정</button>
                                         <button type="button" style="background-color:#3498DB;border:1px solid #3498DB;" class="btn btn-primary" onclick="deleteElection();">선거 삭제</button>
                                     </div>
                                 </div>
@@ -190,6 +190,9 @@
                         function electionDeleted(){
                             $('#deleteElectionModal').modal('hide');
                             $('#electionDeletedModal').modal('toggle');
+                        }
+                        function modifyElection(){
+                            document.location.href='./modifyElection.html';
                         }
                     </script>
 </body>
