@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./static/style.css">
     <title>Admin Page</title>
 </head>
@@ -19,10 +19,10 @@
             <a href="javascript:if(confirm('로그아웃하시겠습니까?'))document.location.href='./login.html';"><img class="sidemenu mb-4" src="./img/iconfinder_Meatballs_Menu_5349755.png" alt width="45" height="40"></a>
         </div>
         <!-- slide start -->
-        <div id="carouselExampleIndicators" class="carousel slide manage-carousel-slide" data-ride="carousel" data-interval="false">
+        <div id="carouselIndicators" class="carousel slide manage-carousel-slide" data-ride="carousel" data-interval="false">
             <ol class="carousel-indicators manage-slide-ol">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="manage-slide-li active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1" class="manage-slide-li"></li>
+                <li data-target="#carouselIndicators" data-slide-to="0" class="manage-slide-li active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1" class="manage-slide-li"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active manage-carousel-item">
@@ -31,38 +31,38 @@
                         <div class="manage-carousel-item-title-inner">등록된 선거</div>
                     </div>
                     <!-- title end -->
-                    <!-- content -->
-                    <div class="manage-carousel-item-content" data-toggle="modal" data-target="#exampleModal">
+                    <!-- content --> <!-- for loop start -->
+                    <div class="manage-carousel-item-content" data-toggle="modal" data-target="#regElecModal">
                         <div class="manage-carousel-item-content-1">
                             <div class="manage-carousel-item-content-2">20.07.18&nbsp;&nbsp;&nbsp;&nbsp;D-xx</div>
                             <div class="manage-carousel-item-content-3">2020 상명대학교 총학생회 선거</div>
                         </div>
                     </div>
-                    <div class="manage-carousel-item-content" data-toggle="modal" data-target="#exampleModal">
+                    <div class="manage-carousel-item-content" data-toggle="modal" data-target="#regElecModal">
                         <div class="manage-carousel-item-content-1">
                             <div class="manage-carousel-item-content-2">20.07.18&nbsp;&nbsp;&nbsp;&nbsp;D-xx</div>
                             <div class="manage-carousel-item-content-3">2020 상명대학교 사범대 학생회 선거</div>
                         </div>
                     </div>
-                    <div class="manage-carousel-item-content" data-toggle="modal" data-target="#exampleModal">
+                    <div class="manage-carousel-item-content" data-toggle="modal" data-target="#regElecModal">
                         <div class="manage-carousel-item-content-1">
                             <div class="manage-carousel-item-content-2">20.07.18&nbsp;&nbsp;&nbsp;&nbsp;D-xx</div>
                             <div class="manage-carousel-item-content-3">2020 상명대학교 사범대 학생회 선거</div>
                         </div>
                     </div>
-                    <div class="manage-carousel-item-content" data-toggle="modal" data-target="#exampleModal">
+                    <div class="manage-carousel-item-content" data-toggle="modal" data-target="#regElecModal">
                         <div class="manage-carousel-item-content-1">
                             <div class="manage-carousel-item-content-2">20.07.18&nbsp;&nbsp;&nbsp;&nbsp;D-xx</div>
                             <div class="manage-carousel-item-content-3">2020 상명대학교 사범대 학생회 선거</div>
                         </div>
                     </div>
-                    <div class="manage-carousel-item-content" data-toggle="modal" data-target="#exampleModal">
+                    <div class="manage-carousel-item-content" data-toggle="modal" data-target="#regElecModal">
                         <div class="manage-carousel-item-content-1">
                             <div class="manage-carousel-item-content-2">20.07.18&nbsp;&nbsp;&nbsp;&nbsp;D-xx</div>
                             <div class="manage-carousel-item-content-3">2020 상명대학교 사범대 학생회 선거</div>
                         </div>
                     </div>
-                    <!-- content end -->
+                    <!-- content end --> <!-- for loop end -->
                 </div>
                 <div class="carousel-item">
                     <!-- title -->
@@ -70,7 +70,7 @@
                         <div class="manage-carousel-item-title-inner">진행 중인 선거</div>
                     </div> <!-- title end -->
                     <!-- content -->
-                    <div class="manage-carousel-item-content" data-toggle="modal" data-target="#exampleModal2">
+                    <div class="manage-carousel-item-content" data-toggle="modal" data-target="#startedElecModal">
                         <div class="manage-carousel-item-content-1">
                             <div class="manage-carousel-item-content-2">20.07.18&nbsp;&nbsp;&nbsp;&nbsp;D-xx</div>
                             <div class="manage-carousel-item-content-3">2020 상명대학교 총학생회 선거</div>
@@ -80,13 +80,13 @@
                 </div>
                 <!-- slide end -->
                 <!-- modal start -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="regElecModal" tabindex="-1" role="dialog" aria-labelledby="regElecModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content" style="margin:70px;">
-                            <div class="modal-body" style="text-align: center;">
+                            <div class="modal-body tac">
                                 2020 상명대학교 총학생회 선거
                             </div>
-                            <div class="modal-footer" style="justify-content: center;">
+                            <div class="modal-footer jac">
                                 <button type="button" class="btn btn-primary manage-modal-footer-button" onclick="startElection();">선거 시작</button>
                                 <button type="button" class="btn btn-primary manage-modal-footer-button" onclick="modifyElection()">선거 수정</button>
                                 <button type="button" class="btn btn-primary manage-modal-footer-button" onclick="deleteElection();">선거 삭제</button>
@@ -96,13 +96,13 @@
                 </div>
                 <!-- modal end -->
                 <!-- modal start -->
-                <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                <div class="modal fade" id="startedElecModal" tabindex="-1" role="dialog" aria-labelledby="startedElecModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content" style="margin:70px;">
-                            <div class="modal-body" style="text-align: center;">
+                            <div class="modal-body tac">
                                 2020 상명대학교 총학생회 선거
                             </div>
-                            <div class="modal-footer" style="justify-content: center;">
+                            <div class="modal-footer jac">
                                 <button type="button" class="btn btn-primary manage-modal-footer-button" style="width:100%;" onclick="endElection();">선거 종료</button>
                             </div>
                         </div>
@@ -113,7 +113,7 @@
                 <div class="modal fade" id="startElectionModal" tabindex="-1" role="dialog" aria-labelledby="startElectionModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content" style="margin:70px;">
-                            <div class="modal-body" style="text-align: center;">
+                            <div class="modal-body tac">
                                 <div style="font-size:medium;">
                                     선거를 시작하시겠습니까?
                                 </div>
@@ -121,7 +121,7 @@
                                     2020 상명대학교 총학생회 선거
                                 </div>
                             </div>
-                            <div class="modal-footer" style="justify-content: center;">
+                            <div class="modal-footer jac">
                                 <button type="button" class="btn btn-secondary manage-modal-footer-button-2" style="width:45%;" data-dismiss="modal">취소</button>
                                 <button type="button" class="btn btn-primary manage-modal-footer-button" style="width:45%;" onclick="electionStarted();">시작</button>
                             </div>
@@ -133,7 +133,7 @@
                 <div class="modal fade" id="electionStartedModal" tabindex="-1" role="dialog" aria-labelledby="electionStartedModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content" style="margin:70px;">
-                            <div class="modal-body" style="text-align: center;">
+                            <div class="modal-body tac">
                                 <div style="font-size:medium;">
                                     2020 상명대학교 사범대 학생회 선거
                                 </div>
@@ -141,7 +141,7 @@
                                     선거가 시작되었습니다.
                                 </div>
                             </div>
-                            <div class="modal-footer" style="justify-content: center;">
+                            <div class="modal-footer jac">
                                 <button type="button" class="btn btn-primary manage-modal-footer-button" style="width:45%;" onclick="document.location.href='./adminManage.html?id=2'">확인</button>
                             </div>
                         </div>
@@ -152,7 +152,7 @@
                 <div class="modal fade" id="deleteElectionModal" tabindex="-1" role="dialog" aria-labelledby="deleteElectionModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content" style="margin:70px;">
-                            <div class="modal-body" style="text-align: center;">
+                            <div class="modal-body tac">
                                 <div style="font-size:medium;">
                                     선거를 삭제하시겠습니까?
                                 </div>
@@ -160,7 +160,7 @@
                                     2020 상명대학교 총학생회 선거
                                 </div>
                             </div>
-                            <div class="modal-footer" style="justify-content: center;">
+                            <div class="modal-footer jac">
                                 <button type="button" class="btn btn-secondary manage-modal-footer-button-2" style="width:45%;" data-dismiss="modal">취소</button>
                                 <button type="button" class="btn btn-primary manage-modal-footer-button" style="width:45%;" onclick="electionDeleted();">삭제</button>
                             </div>
@@ -172,7 +172,7 @@
                 <div class="modal fade" id="electionDeletedModal" tabindex="-1" role="dialog" aria-labelledby="electionDeletedModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content" style="margin:70px;">
-                            <div class="modal-body" style="text-align: center;">
+                            <div class="modal-body tac">
                                 <div style="font-size:medium;">
                                     2020 상명대학교 사범대 학생회 선거
                                 </div>
@@ -180,7 +180,7 @@
                                     선거가 삭제되었습니다.
                                 </div>
                             </div>
-                            <div class="modal-footer" style="justify-content: center;">
+                            <div class="modal-footer jac">
                                 <button type="button" class="btn btn-primary manage-modal-footer-button" style="width:45%;" onclick="document.location.href='./adminManage.html'">확인</button>
                             </div>
                         </div>
@@ -190,53 +190,26 @@
             </div>
             <!-- Optional JavaScript -->
             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="./static/script.js"></script>
             <script>
             $(function() {
                 var params = {};
                 window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str, key, value) { params[key] = value; });
-                if (params.id == 2){
-                    $('.carousel-indicators > li:nth-child(2)').attr('class','active manage-slide-li');
-                    $('.carousel-indicators > li:nth-child(1)').attr('class','manage-slide-li')
-                    $('.carousel-inner > .carousel-item:nth-child(2)').attr('class', 'carousel-item active manage-carousel-item');
-                    $('.carousel-inner > .carousel-item:nth-child(1)').attr('class', 'carousel-item manage-carousel-item');
-                }else{
-                    $('.carousel-inner > .carousel-item:nth-child(2)').attr('class', 'carousel-item manage-carousel-item');
-                    $('.carousel-indicators > li:nth-child(2)').attr('class','manage-slide-li')
-                    $('.carousel-indicators > li:nth-child(1)').attr('class','active manage-slide-li');
-                    $('.carousel-inner > .carousel-item:nth-child(1)').attr('class', 'carousel-item active manage-carousel-item');
+                if (params.id == 2){ //id=2 일 경우에만 두번째 슬라이드가 먼저 나오도록
+                    $('.carousel-indicators > li:nth-child(1)').removeClass('active')
+                    $('.carousel-indicators > li:nth-child(2)').addClass('active');
+                    $('.carousel-inner > .carousel-item:nth-child(1)').removeClass('active');
+                    $('.carousel-inner > .carousel-item:nth-child(2)').addClass('active');
+                }else{ //id=0이든 id=1이든 2가 아닌 모든 경우에는 항상 첫번째 슬라이드가 먼저 나오도록
+                    $('.carousel-indicators > li:nth-child(1)').addClass('active');
+                    $('.carousel-indicators > li:nth-child(2)').removeClass('active')
+                    $('.carousel-inner > .carousel-item:nth-child(1)').addClass('active');
+                    $('.carousel-inner > .carousel-item:nth-child(2)').removeClass('active');
                 }
             })
-
-            function startElection() {
-                $('#exampleModal').modal('hide');
-                $('#startElectionModal').modal('toggle');
-            }
-
-            function electionStarted() {
-                $('#startElectionModal').modal('hide');
-                $('#electionStartedModal').modal('toggle');
-            }
-
-            function deleteElection() {
-                $('#exampleModal').modal('hide');
-                $('#deleteElectionModal').modal('toggle');
-            }
-
-            function electionDeleted() {
-                $('#deleteElectionModal').modal('hide');
-                $('#electionDeletedModal').modal('toggle');
-            }
-
-            function modifyElection() {
-                document.location.href = './modifyElection.html';
-            }
-
-            function endElection() {
-                document.location.href = './adminManage.html?id=2';
-            }
             </script>
 </body>
 

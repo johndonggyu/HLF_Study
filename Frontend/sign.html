@@ -1,60 +1,59 @@
 <!doctype html>
 <html lang="ko">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./static/style.css">
     <title>Help Page</title>
-  </head>
-  <body class="loginbody">
+</head>
+
+<body class="loginbody">
     <div class="text-center">
-    	<div class="main-header">
-    		<a href="./main.html"><img class="mb-4" src="./img/smulogo4.png" alt width="150" height="47"></a>
-    		<a href="./help.html"><img class="help mb-4" src="./img/iconfinder_Faqs_5349749.png" alt width="45" height="40"></a>
-    		<a href="javascript:if(confirm('로그아웃하시겠습니까?'))document.location.href='./login.html';"><img class="sidemenu mb-4" src="./img/iconfinder_Meatballs_Menu_5349755.png" alt width="45" height="40"></a>
-    	</div>
-
-    	<div class="sign-box">
-    		<div class="in-sign-box"> 
-    			<p class="signtext">유의사항</p>
-    			<span style="font-size:small;">
-2020학년도 상명대학교 서울캠퍼스 총학생회 및 단과대학생회 선거를 온라인투표로 진행함에 있어 부정투표를 방지하기 위해 투표 진행 시 개개인의 투표 일시와 정보가 기록됩니다.
-만약 아래 사항을 위반할 경우 관련법에 따라 조치될 수 있음을 알려드립니다.
+        <div class="main-header">
+            <a href="./main.html"><img class="mb-4" src="./img/smulogo4.png" alt width="150" height="47"></a>
+            <a href="./help.html"><img class="help mb-4" src="./img/iconfinder_Faqs_5349749.png" alt width="45" height="40"></a>
+            <a href="javascript:if(confirm('로그아웃하시겠습니까?'))document.location.href='./login.html';"><img class="sidemenu mb-4" src="./img/iconfinder_Meatballs_Menu_5349755.png" alt width="45" height="40"></a>
+        </div>
+        <div class="sign-box">
+            <div class="in-sign-box">
+                <p class="signtext">유의사항</p>
+                <span style="font-size:small;">
+                    2020학년도 상명대학교 서울캠퍼스 총학생회 및 단과대학생회 선거를 온라인투표로 진행함에 있어 부정투표를 방지하기 위해 투표 진행 시 개개인의 투표 일시와 정보가 기록됩니다.
+                    만약 아래 사항을 위반할 경우 관련법에 따라 조치될 수 있음을 알려드립니다.
                 </span>
-                <span style="font-weight:bold;font-size:small;text-align:left;"><p style="margin-top:10px">
-                    1. 본인 외 다른 사람의 대리 투표를 하지 않는다.</p>
+                <span style="font-weight:bold;font-size:small;text-align:left;">
+                    <p style="margin-top:10px">
+                        1. 본인 외 다른 사람의 대리 투표를 하지 않는다.</p>
                 </span>
-    		</div>
-    		<div class="signbtns">
-    		<button class="nsignbtn btn btn-primary" onclick="alert('메인으로 돌아갑니다.');document.location.href='./main.html'">동의안함</button>
-    		<button onclick="document.location.href='./vote.html'" class="signbtn btn btn-primary">동의함</button>
-    		</div>
-    	</div>
+            </div>
+            <div class="signbtns">
+                <button class="nsignbtn btn btn-primary" onclick="alert('메인으로 돌아갑니다.');document.location.href='./main.html'">동의안함</button>
+                <button onclick="document.location.href='./vote.html'" class="signbtn btn btn-primary">동의함</button>
+            </div>
+        </div>
     </div>
-
     <!-- Modal -->
-	<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-	  <div class="modal-dialog modal-dialog-centered" role="document">
-	    <div class="modal-content small-modal-content">
-	      <div class="modal-body" style="text-align: center;">
-	        <span style="font-weight: bold;">동의하지 않으셨습니다.<br>홈으로 돌아갑니다.</span>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-primary" onclick="document.location.href='./main.html'">OK</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content small-modal-content">
+                <div class="modal-body" style="text-align: center;">
+                    <span style="font-weight: bold;">동의하지 않으셨습니다.<br>홈으로 돌아갑니다.</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="document.location.href='./main.html'">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
 </html>

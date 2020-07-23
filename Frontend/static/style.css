@@ -11,8 +11,6 @@
 
 .loginbody {
     align-items: center;
-    /*padding-top: 40px;
-    padding-bottom: 40px;*/
     background-color: #f5f5f5;
 }
 
@@ -65,10 +63,6 @@
 .sidemenu {
     padding-right: 5px;
     float: right;
-}
-
-.vote-container {
-    /*margin-top: 200px;*/
 }
 
 .promise,
@@ -583,4 +577,161 @@ a:link {
 
 .manage-carousel-item::-webkit-scrollbar {
     width: 0px;
+}
+
+/* adminNow */
+.now-title {
+    background-color: #E0E0E0;
+    height: 40px;
+    margin: 20px;
+}
+
+.now-title>div {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.now-content {
+    background-color: #FAFAFA;
+    margin: 20px;
+    padding: 10px;
+}
+
+.now-content>div {
+    margin-bottom: 10px;
+}
+
+.now-content-span {
+    font-size: 14px;
+    text-align: left;
+}
+
+.now-content-span2 {
+    font-size: 12px;
+    color: #9E9FA1;
+    text-align: right;
+}
+
+.now-content-result {
+    font-size: 14px;
+}
+
+.now-content-result>input {
+    width: 300px;
+    text-align: center;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    color: #5E5E5E;
+}
+
+/* modifyElection */
+.signbtns-cancel {
+    background-color: #BEBEBE;
+    border: 1px solid #BEBEBE;
+    color: white;
+    width: 50%;
+    border-radius: 0px;
+    float: left;
+}
+
+.signbtns-modify {
+    background-color: #3498FF;
+    border: 1px solid #3498FF;
+    color: white;
+    width: 50%;
+    border-radius: 0px;
+}
+
+/* vote updated*/
+.giho {
+    background-color: #FAFAFA;
+    text-align: left;
+}
+
+.vote-table2 {
+    background-color: #FAFAFA;
+    height: 300px;
+}
+
+.vote-slide {
+    height: 300px;
+}
+
+.vote-slide-li {
+    background-color: #3498DB;
+    width: 10px;
+    height: 10px;
+    border-radius: 50% / 50%;
+}
+
+.hubo-banner {
+    height: 38%;
+    background-color: #6BB9ED;
+}
+
+.hubo-title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.hubo-logo {
+    padding-bottom: 10px;
+}
+
+.hubo-logo>img {
+    width: 70px;
+    height: 70px;
+}
+
+.hubo-container {
+    height: 62%;
+    background-color: #FAFAFA;
+}
+
+.hubo-one {
+    width: 100px;
+    height: 150px;
+    margin: 5px 20px;
+    float: left;
+}
+
+.hubo-two {
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    margin: 5px 20px;
+    float: right;
+}
+
+.hubo-classify {
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+.hubo-img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.4rem;
+}
+
+.hubo-info {
+    font-size: 12px;
+    color: #9E9FA1;
+    text-align: center;
+}
+
+.slide-index {
+    width: 30px;
+    height: 15px;
+    display: inline-block;
+}
+
+/* common */
+.tac {
+    text-align: center;
+}
+
+.jac {
+    justify-content: center;
 }
