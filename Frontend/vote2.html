@@ -9,19 +9,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./static/style.css">
     <title>Help Page</title>
-    <script>
-        var votecheck = function(num) {
-            var str = "";
-            if(num == 1) str = "stamp1";
-            else if(num == 2) str = "stamp2"; 
-            var stamp = document.getElementById(str);
-            if(stamp.innerHTML.length != 0){
-                stamp.innerHTML="";
-            }else{
-                stamp.innerHTML="<img style='text-align:center;width:50px;height:50px;margin:auto auto;' src='./img/election.jpg'>";
-            }
-        }
-    </script>
 </head>
 
 <body class="loginbody">
