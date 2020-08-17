@@ -1,4 +1,4 @@
-# 현재 private repository로 팀 작업중...
+# Main repository 변경됨 https://github.com/BL-UCKSS/evote-project
 
 # HLF_Study
 
